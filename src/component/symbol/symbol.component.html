@@ -1,0 +1,8 @@
+<ng-container *ngIf="symbols && symbols.length > 0">
+    <svg style="display: none;" *ngFor="let symbol of symbols">
+        <symbol role="img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                [attr.id]="symbol?.id" [attr.viewBox]="'0 0 ' + symbol?.width + ' ' + symbol?.height">
+            <path fill="currentColor" [attr.d]="symbol?.path"></path>
+        </symbol>
+    </svg>
+</ng-container>

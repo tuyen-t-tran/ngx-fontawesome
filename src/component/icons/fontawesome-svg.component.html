@@ -1,0 +1,45 @@
+<ng-container *ngIf="svgSymbol">
+    <svg class="ngx-icon" *ngIf="!inlineSvg"
+         [ngClass]="classList"
+         [attr.data-icon]="name"
+         [attr.data-prefix]="prefix"
+         [attr.aria-labelledby]="title ? componentId + '-title' : null">
+        <title [attr.id]="componentId + '-title'" *ngIf="title" [innerHTML]="title"></title>
+        <use [attr.xlink:href]="'#' + svgSymbol?.id"></use>
+    </svg>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" *ngIf="inlineSvg"
+         [ngClass]="classList"
+         [attr.data-icon]="name"
+         [attr.data-prefix]="prefix"
+         [attr.aria-labelledby]="title ? componentId + '-title' : null"
+         [style.transformOrigin]="useMask ? null : symbolTransform"
+         [attr.viewBox]="'0 0 ' + (useMask && !!maskSymbol ? (maskSymbol?.width + ' ' + maskSymbol?.height) : (svgSymbol?.width + ' ' + svgSymbol?.height))">
+        <title [attr.id]="componentId + '-title'" *ngIf="title" [innerHTML]="title"></title>
+        <g [attr.transform]="outerTransform" *ngIf="!useMask">
+            <g [attr.transform]="innerTransform">
+                <path [attr.transform]="pathTransform" fill="currentColor" [attr.d]="svgSymbol?.path"></path>
+            </g>
+        </g>
+        <ng-container *ngIf="useMask && maskSymbol">
+            <defs>
+                <clipPath [attr.id]="componentId + '-clip'">
+                    <path fill="currentColor" [attr.d]="maskSymbol?.path"></path>
+                </clipPath>
+                <mask [attr.id]="componentId + '-mask'" x="0" y="0" width="100%" height="100%"
+                      maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+                    <g [attr.transform]="outerTransform">
+                        <g [attr.transform]="innerTransform">
+                            <path [attr.transform]="pathTransform" fill="currentColor"
+                                  [attr.d]="svgSymbol?.path"></path>
+                        </g>
+                    </g>
+                </mask>
+            </defs>
+            <rect fill="currentColor" x="0" y="0" width="100%" height="100%"
+                  [attr.clip-path]="'url(#' + componentId + '-clip)'"
+                  [attr.mask]="'url(#' + componentId + '-mask)'">
+            </rect>
+        </ng-container>
+    </svg>
+</ng-container>

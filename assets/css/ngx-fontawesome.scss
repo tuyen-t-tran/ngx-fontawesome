@@ -1,0 +1,23 @@
+/* MISSING FONTAWESOME 5 STYLES */
+
+/* Added to support animation of SVG icons */
+
+.fa-svg-spin {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  -webkit-animation: fa-spin 2s linear infinite;
+  animation: fa-spin 2s linear infinite;
+}
+
+.fa-svg-pulse {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8)
+}
+
+/* Added to support rotateBy */
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle,0));
+  transform: rotate(var(--fa-rotate-angle,0));
+}

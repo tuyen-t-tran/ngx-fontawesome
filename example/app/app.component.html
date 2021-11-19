@@ -1,0 +1,1299 @@
+<br/>
+
+<header class="demo-app-header">
+    <div class="rt-container">
+        <div class="col-rt-12">
+            <div class="rt-heading">
+                <h1>Angular Font Awesome</h1>
+                <h2>Another Angular way to display FontAwesome (v5+)</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="docs-generated">
+    <div class="rt-container">
+        <div class="col-rt-12">
+            <div class="tab-wrap">
+                <input type="radio" id="tab-font-type-1" name="tab-group-font-type" class="tab" checked>
+                <label for="tab-font-type-1">Web Font</label>
+
+                <input type="radio" id="tab-font-type-2" name="tab-group-font-type" class="tab">
+                <label for="tab-font-type-2">SVG</label>
+
+                <!-- WEB FONTS -->
+                <div class="tab__content">
+
+                    <!-- WEB-FONT SIZING -->
+                    <div class="demo-section">
+                        <h3>Sizing & Scaling Icons</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/sizing-icons"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <p>Set the attribute <code class="inline">scale</code> or <code class="inline">size</code>
+                        to increase or decrease the size of icons relative to the inherited <code class="inline">font-size</code>.
+                    </p>
+                    <div class="show-off">
+                        <fa prefix="fas" name="camera" size="xs"></fa>
+                        <fa prefix="fas" name="camera" size="sm"></fa>
+                        <fa prefix="fas" name="camera" size="lg"></fa>
+                        <fa prefix="fas" name="camera" scale="2"></fa>
+                        <fa prefix="fas" name="camera" scale="3"></fa>
+                        <fa prefix="fas" name="camera" scale="5"></fa>
+                        <fa prefix="fas" name="camera" scale="7"></fa>
+                        <fa prefix="fas" name="camera" scale="10"></fa>
+                    </div>
+                    <div class="tab-wrap">
+                        <!-- active tab on page load gets checked attribute -->
+                        <input type="radio" id="tab-sizing-scaling1" name="tab-group-sizing-scaling" class="tab">
+                        <label for="tab-sizing-scaling1">Font Awesome</label>
+
+                        <input type="radio" id="tab-sizing-scaling2" name="tab-group-sizing-scaling" class="tab"
+                               checked>
+                        <label for="tab-sizing-scaling2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<i class="fas fa-camera fa-xs"></i>
+<i class="fas fa-camera fa-sm"></i>
+<i class="fas fa-camera fa-lg"></i>
+<i class="fas fa-camera fa-2x"></i>
+<i class="fas fa-camera fa-3x"></i>
+<i class="fas fa-camera fa-5x"></i>
+<i class="fas fa-camera fa-7x"></i>
+<i class="fas fa-camera fa-10x"></i>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<fa prefix="fas" name="camera" size="xs"></fa>
+<fa prefix="fas" name="camera" size="sm"></fa>
+<fa prefix="fas" name="camera" size="lg"></fa>
+<fa prefix="fas" name="camera" scale="2"></fa>
+<fa prefix="fas" name="camera" scale="3"></fa>
+<fa prefix="fas" name="camera" scale="5"></fa>
+<fa prefix="fas" name="camera" scale="7"></fa>
+<fa prefix="fas" name="camera" scale="10"></fa>
+                    </textarea>
+                        </div>
+                    </div>
+                    <div class="docs-generated table-wrap">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="align-left">FA Class</th>
+                                <th class="align-left">Size (em)</th>
+                                <th class="align-left"><code class="inline">&lt;fa&gt;</code> attribute</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-xs</code></td>
+                                <td class="align-left">.75</td>
+                                <td class="align-left"><code class="inline">size="xs"</code></td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-xs</code></td>
+                                <td class="align-left">.875</td>
+                                <td class="align-left"><code class="inline">size="sm"</code></td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-lg</code>(*)</td>
+                                <td class="align-left">1.33</td>
+                                <td class="align-left"><code class="inline">size="lg"</code></td>
+                            </tr>
+                            <tr>
+                                <td class="align-left" colspan="3">(*) Also applies style="<code class="inline">vertical-align:
+                                    -25%</code>"
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-2x</code>/../<code
+                                    class="inline">fa-10x</code></td>
+                                <td class="align-left">1/../10</td>
+                                <td class="align-left"><code class="inline">scale="1"</code>/../<code class="inline">scale="10"</code>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- WEB-FONT FIXED-WIDTH -->
+                    <div class="demo-section">
+                        <h3>Fixed Width Icons</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/fixed-width-icons"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <div class="show-off">
+                        <div style="font-size: 2rem;">
+                            <div>
+                                <fa prefix="fas" name="skating" fixedWidth="true" cssClass="darkblue-background"></fa>
+                                Skating
+                            </div>
+                            <div>
+                                <fa prefix="fas" name="skiing" fixedWidth="true" cssClass="lightblue-background"></fa>
+                                Skiing
+                            </div>
+                            <div>
+                                <fa prefix="fas" name="skiing-nordic" fixedWidth="true"
+                                    cssClass="darkblue-background"></fa>
+                                Nordic Skiing
+                            </div>
+                            <div>
+                                <fa prefix="fas" name="snowboarding" fixedWidth="true"
+                                    cssClass="lightblue-background"></fa>
+                                Snowboarding
+                            </div>
+                            <div>
+                                <fa prefix="fas" name="snowplow" fixedWidth="true" cssClass="darkblue-background"></fa>
+                                Snowplow
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-fixed-width1" name="tab-group-fixed-width" class="tab">
+                        <label for="tab-fixed-width1">Font Awesome</label>
+
+                        <input type="radio" id="tab-fixed-width2" name="tab-group-fixed-width" class="tab" checked>
+                        <label for="tab-fixed-width2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div style="font-size: 2rem;">
+  <div><i class="fas fa-skating fa-fw" style="background:DodgerBlue"></i> Skating</div>
+  <div><i class="fas fa-skiing fa-fw" style="background:SkyBlue"></i> Skiing</div>
+  <div><i class="fas fa-skiing-nordic fa-fw" style="background:DodgerBlue"></i> Nordic Skiing</div>
+  <div><i class="fas fa-snowboarding fa-fw" style="background:SkyBlue"></i> Snowboarding</div>
+  <div><i class="fas fa-snowplow fa-fw" style="background:DodgerBlue"></i> Snowplow</div>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="css" mode="default">
+.lightblue-background {
+  background: SkyBlue;
+}
+.darkblue-background {
+  background: DodgerBlue;
+}
+                    </textarea>
+                            <textarea highlight-js lang="html" mode="default">
+<div style="font-size: 2rem;">
+  <div><fa prefix="fas" name="skating" fixedWidth="true" cssClass="darkblue-background"></fa> Skating</div>
+  <div><fa prefix="fas" name="skiing" fixedWidth="true" cssClass="lightblue-background"></fa> Skiing</div>
+  <div><fa prefix="fas" name="skiing-nordic" fixedWidth="true" cssClass="darkblue-background"></fa> Nordic Skiing</div>
+  <div><fa prefix="fas" name="snowboarding" fixedWidth="true" cssClass="lightblue-background"></fa> Snowboarding</div>
+  <div><fa prefix="fas" name="snowplow" fixedWidth="true" cssClass="darkblue-background"></fa> Snowplow</div>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- WEB-FONT ROTATING -->
+                    <div class="demo-section">
+                        <h3>Rotating Icons</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/rotating-icons"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <p>Set attribute <code class="inline">rotate</code> or <code class="inline">rotateBy</code> to
+                        rotate an icon.
+                    </p>
+                    <p>However, the attribute <code class="inline">rotate</code> only takes one of these values: <code
+                        class="inline">90, 180, 270</code>.</p>
+                    <p>To rotate the icon by an arbitrary angle, use the attribute <code class="inline">rotateBy</code>
+                    </p>
+                    <p>Set attribute <code class="inline">flip</code> to flip, or mirror an icon horizontally,
+                        vertically or both.
+                    </p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <fa prefix="fas" name="snowboarding" title="original"></fa>
+                            <fa prefix="fas" name="snowboarding" rotate="90" title="rotate 90 degree"></fa>
+                            <fa prefix="fas" name="snowboarding" rotate="180" title="rotate 180 degree"></fa>
+                            <fa prefix="fas" name="snowboarding" rotate="270" title="rotate 270 degree"></fa>
+                            <fa prefix="fas" name="snowboarding" flip="horizontal" title="flip horizontally"></fa>
+                            <fa prefix="fas" name="snowboarding" flip="vertical" title="flip vertically"></fa>
+                            <fa prefix="fas" name="snowboarding" flip="both"
+                                title="flip both horizontally and vertically"></fa>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <!-- active tab on page load gets checked attribute -->
+                        <input type="radio" id="tab1" name="tab-group-rotation" class="tab">
+                        <label for="tab1">Font Awesome</label>
+
+                        <input type="radio" id="tab2" name="tab-group-rotation" class="tab" checked>
+                        <label for="tab2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <i class="fas fa-snowboarding"></i>
+    <i class="fas fa-snowboarding fa-rotate-90"></i>
+    <i class="fas fa-snowboarding fa-rotate-180"></i>
+    <i class="fas fa-snowboarding fa-rotate-270"></i>
+    <i class="fas fa-snowboarding fa-flip-horizontal"></i>
+    <i class="fas fa-snowboarding fa-flip-vertical"></i>
+    <i class="fas fa-snowboarding fa-flip-both"></i>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <fa prefix="fas" name="snowboarding" title="original"></fa>
+    <fa prefix="fas" name="snowboarding" rotate="90" title="rotate 90 degree"></fa>
+    <fa prefix="fas" name="snowboarding" rotate="180" title="rotate 180 degree"></fa>
+    <fa prefix="fas" name="snowboarding" rotate="270" title="rotate 270 degree"></fa>
+    <fa prefix="fas" name="snowboarding" flip="horizontal" title="flip horizontally"></fa>
+    <fa prefix="fas" name="snowboarding" flip="vertical" title="flip vertically"></fa>
+    <fa prefix="fas" name="snowboarding" flip="both" title="flip both horizontally and vertically"></fa>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+                    <div class="docs-generated table-wrap">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="align-left">FA Class</th>
+                                <th class="align-left"><code class="inline">&lt;fa&gt;</code> attribute</th>
+                                <th class="align-left">Rotation Amount</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-rotate-90</code></td>
+                                <td class="align-left"><code class="inline">rotate="90"</code></td>
+                                <td class="align-left">90°</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-rotate-180</code></td>
+                                <td class="align-left"><code class="inline">rotate="180"</code></td>
+                                <td class="align-left">180°</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-rotate-270</code></td>
+                                <td class="align-left"><code class="inline">rotate="270"</code></td>
+                                <td class="align-left">270°</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-rotate-by</code>/<code>--fa-rotate-angle:
+                                    Ndeg;</code>
+                                </td>
+                                <td class="align-left"><code class="inline">rotateBy="N"</code></td>
+                                <td class="align-left">arbitrary angle (in deg)</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-flip-horizontal</code></td>
+                                <td class="align-left"><code class="inline">flip="horizontal"</code></td>
+                                <td class="align-left">mirrors icon horizontally</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-flip-vertical</code></td>
+                                <td class="align-left"><code class="inline">flip="vertical"</code></td>
+                                <td class="align-left">mirrors icon vertically</td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-flip-both</code></td>
+                                <td class="align-left"><code class="inline">flip="both"</code></td>
+                                <td class="align-left">mirrors icon vertically and horizontally</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ROTATING + FLIPPING -->
+                    <div class="demo-section">
+                        <h4>Combining Rotating + Flipping</h4>
+                    </div>
+                    <p>You can both rotate and flip an icon. However, an element or a component can take ONLY one
+                        transformation.</p>
+                    <p>Therefore, you’ll need to use a container, such as a <code class="inline">&lt;span&gt;</code>
+                        element, for
+                        additional transformation.</p>
+                    <p>Apply one rotate to the container and another on the nested icon.</p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <!-- A icon that's rotated 90 degrees and flipped horizontally -->
+                            <span class="fa-rotate-90" style="display: inline-block;">
+                                <fa prefix="fas" name="snowboarding" flip="horizontal"></fa>
+                            </span>
+                            <!-- A icon that's flipped horizontally and rotated 90 degrees  -->
+                            <span class="fa-flip-horizontal" style="display: inline-block;">
+                                <fa prefix="fas" name="snowboarding" rotate="90"></fa>
+                            </span>
+                            <!-- A icon that's flipped vertically and rotated 270 degrees  -->
+                            <span class="fa-flip-vertical" style="display: inline-block;">
+                                <fa prefix="fas" name="snowboarding" rotate="270"></fa>
+                            </span>
+                            <!-- A icon that's rotated 270 degrees and flipped vertically -->
+                            <span class="fa-rotate-270" style="display: inline-block;">
+                                <fa prefix="fas" name="snowboarding" flip="vertical"></fa>
+                            </span>
+                            <!-- A icon that's flipped on both axes and arbitrarily rotated 45 degrees  -->
+                            <span class="fa-flip-both" style="display: inline-block;">
+                                <fa prefix="fas" name="snowboarding" rotateBy="45"></fa>
+                            </span>
+                            <!-- A icon that's arbitrarily rotated 45 degrees and flipped on both axes  -->
+                            <span class="fa-rotate-by" style="display: inline-block; --fa-rotate-angle: 45deg;">
+                                <fa prefix="fas" name="snowboarding" flip="both"></fa>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-rotation-flip-1" name="tab-group-rotation-flip" class="tab">
+                        <label for="tab-rotation-flip-1">Font Awesome</label>
+
+                        <input type="radio" id="tab-rotation-flip-2" name="tab-group-rotation-flip" class="tab" checked>
+                        <label for="tab-rotation-flip-2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+  <!-- A icon that's rotated 90 degrees and flipped horizontally -->
+  <span class="fa-rotate-90" style="display: inline-block;">
+    <i class="fas fa-snowboarding fa-flip-horizontal"></i>
+  </span>
+  <!-- A icon that's flipped horizontally and rotated 90 degrees  -->
+  <span class="fa-flip-horizontal" style="display: inline-block;">
+    <i class="fas fa-snowboarding fa-rotate-90"></i>
+  </span>
+  <!-- A icon that's flipped vertically and rotated 270 degrees  -->
+  <span class="fa-flip-vertical" style="display: inline-block;">
+    <i class="fas fa-snowboarding fa-rotate-270"></i>
+  </span>
+  <!-- A icon that's rotated 270 degrees and flipped vertically -->
+  <span class="fa-rotate-270" style="display: inline-block;">
+    <i class="fas fa-snowboarding fa-flip-vertical"></i>
+  </span>
+  <!-- A icon that's flipped on both axes and arbitrarily rotated 45 degrees  -->
+  <span class="fa-flip-both" style="display: inline-block;">
+    <i class="fas fa-snowboarding fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+  </span>
+  <!-- A icon that's arbitrarily rotated 45 degrees and flipped on both axes  -->
+  <span class="fa-rotate-by" style="display: inline-block; --fa-rotate-angle: 45deg;">
+    <i class="fas fa-snowboarding fa-flip-both"></i>
+  </span>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <!-- A icon that's rotated 90 degrees and flipped horizontally -->
+    <span class="fa-rotate-90" style="display: inline-block;">
+        <fa prefix="fas" name="snowboarding" flip="horizontal"></fa>
+    </span>
+    <!-- A icon that's flipped horizontally and rotated 90 degrees  -->
+    <span class="fa-flip-horizontal" style="display: inline-block;">
+        <fa prefix="fas" name="snowboarding" rotate="90"></fa>
+    </span>
+    <!-- A icon that's flipped vertically and rotated 270 degrees  -->
+    <span class="fa-flip-vertical" style="display: inline-block;">
+        <fa prefix="fas" name="snowboarding" rotate="270"></fa>
+    </span>
+    <!-- A icon that's rotated 270 degrees and flipped vertically -->
+    <span class="fa-rotate-270" style="display: inline-block;">
+        <fa prefix="fas" name="snowboarding" flip="vertical"></fa>
+    </span>
+    <!-- A icon that's flipped on both axes and arbitrarily rotated 45 degrees  -->
+    <span class="fa-flip-both" style="display: inline-block;">
+        <fa prefix="fas" name="snowboarding" rotateBy="45"></fa>
+    </span>
+    <!-- A icon that's arbitrarily rotated 45 degrees and flipped on both axes  -->
+    <span class="fa-rotate-by" style="display: inline-block; --fa-rotate-angle: 45deg;">
+        <fa prefix="fas" name="snowboarding" flip="both"></fa>
+    </span>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- ANIMATING -->
+                    <div class="demo-section">
+                        <h3>Animating Icons</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/animating-icons"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <div class="show-off">
+                        <div class="fa-3x">
+                            <fa prefix="fas" name="spinner" animation="spin" title="spinning animation"></fa>
+                            <fa prefix="fas" name="circle-notch" animation="spin" title="spinning animation"></fa>
+                            <fa prefix="fas" name="sync" animation="spin" title="spinning animation"></fa>
+                            <fa prefix="fas" name="cog" animation="spin" title="spinning animation"></fa>
+                            <fa prefix="fas" name="spinner" animation="pulse" title="pulse animation"></fa>
+                            <fa prefix="fas" name="stroopwafel" animation="spin" title="spinning animation"></fa>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-animation-1" name="tab-group-animation" class="tab">
+                        <label for="tab-animation-1">Font Awesome</label>
+
+                        <input type="radio" id="tab-animation-2" name="tab-group-animation" class="tab" checked>
+                        <label for="tab-animation-2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-3x">
+  <i class="fas fa-spinner fa-spin"></i>
+  <i class="fas fa-circle-notch fa-spin"></i>
+  <i class="fas fa-sync fa-spin"></i>
+  <i class="fas fa-cog fa-spin"></i>
+  <i class="fas fa-spinner fa-pulse"></i>
+  <i class="fas fa-stroopwafel fa-spin"></i>
+</div>
+                    </textarea>
+                        </div>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-3x">
+    <fa prefix="fas" name="spinner" animation="spin" title="spinning animation"></fa>
+    <fa prefix="fas" name="circle-notch" animation="spin" title="spinning animation"></fa>
+    <fa prefix="fas" name="sync" animation="spin" title="spinning animation"></fa>
+    <fa prefix="fas" name="cog" animation="spin" title="spinning animation"></fa>
+    <fa prefix="fas" name="spinner" animation="pulse" title="pulse animation"></fa>
+    <fa prefix="fas" name="stroopwafel" animation="spin" title="spinning animation"></fa>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+                    <div class="docs-generated table-wrap">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="align-left">FA Class</th>
+                                <th class="align-left"><code class="inline">&lt;fa&gt;</code> attribute</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-spin</code></td>
+                                <td class="align-left"><code class="inline">animation="spin"</code></td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-pulse</code></td>
+                                <td class="align-left"><code class="inline">animation="pulse"</code></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- BORDERED & PULLED -->
+                    <div class="demo-section">
+                        <h3>Bordered + Pulled Icons</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/bordered-pulled-icons"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <p>Set attribute <code class="inline">pull="left"</code> or <code class="inline">pull="right"</code>
+                        to pull /
+                        align the icon to the left or right.</p>
+                    <div class="show-off">
+                        <fa prefix="fas" name="quote-left" scale="2" pull="left"></fa>
+                        Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+                        It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms
+                        further...
+                        And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the
+                        past.
+                        <fa prefix="fas" name="quote-right" scale="2" pull="right"></fa>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-pulled-1" name="tab-group-pulled" class="tab">
+                        <label for="tab-pulled-1">Font Awesome</label>
+
+                        <input type="radio" id="tab-pulled-2" name="tab-group-pulled" class="tab" checked>
+                        <label for="tab-pulled-2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<i class="fas fa-quote-left fa-2x fa-pull-left"></i>
+Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+<i class="fas fa-quote-right fa-2x fa-pull-right"></i>
+                    </textarea>
+                        </div>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<fa prefix="fas" name="quote-left" scale="2" pull="left"></fa>
+Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+<fa prefix="fas" name="quote-right" scale="2" pull="right"></fa>
+                    </textarea>
+                        </div>
+                    </div>
+                    <p>Set attribute <code class="inline">border="true"</code> to add border to the icon.</p>
+                    <div class="show-off">
+                        <fa prefix="fas" name="arrow-right" scale="3" pull="right" border="true"></fa>
+                        Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+                        It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms
+                        further...
+                        And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the
+                        past.
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-bordered-1" name="tab-group-bordered" class="tab">
+                        <label for="tab-bordered-1">Font Awesome</label>
+
+                        <input type="radio" id="tab-bordered-2" name="tab-group-bordered" class="tab" checked>
+                        <label for="tab-bordered-2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<i class="fas fa-arrow-right fa-2x fa-pull-right fa-border"></i>
+Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+                    </textarea>
+                        </div>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<fa prefix="fas" name="arrow-right" scale="3" pull="right" border="true"></fa>
+Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.                    </textarea>
+                        </div>
+                    </div>
+                    <div class="docs-generated table-wrap">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th class="align-left">FA Class</th>
+                                <th class="align-left"><code class="inline">&lt;fa&gt;</code> attribute</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-pull-left</code></td>
+                                <td class="align-left"><code class="inline">pull="left"</code></td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-pull-right</code></td>
+                                <td class="align-left"><code class="inline">pull="right"</code></td>
+                            </tr>
+                            <tr>
+                                <td class="align-left"><code class="inline">fa-border</code></td>
+                                <td class="align-left"><code class="inline">border="true"</code></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- STACKING -->
+                    <div class="demo-section">
+                        <h3>Stacking Icons</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/stacking-icons"
+                           target="_blank" style="display: inline-block">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <p><b>NOTE: </b>Stacking ONLY supports up to 2 icons. To stack more than 2 icons, use SVG icons.</p>
+                    <p>To stack icons, first, set the <code class="inline">fa-stack</code> class on the container
+                        element.</p>
+                    <p>Then set the attribute <code class="inline">stack="1"</code> for the small icon component</p>
+                    <p>Finally, set the attribute <code class="inline">stack="2"</code> for the large icon component.
+                    </p>
+                    <p>When stacking 2 solid icons, the small icon will NOT be visible.
+                        Set the attribute <code class="inline">inverse="true"</code> of the small icon to make it
+                        standout from the
+                        stack.</p>
+                    <p>The size of the stack can be adjusted by setting the size of the container element.</p>
+                    <p>The order of the icons in the container reflects the order of stack.</p>
+
+                    <div class="show-off">
+                        <span class="fa-stack fa-2x">
+                            <fa prefix="fas" name="square" stack="2"></fa>
+                            <fa prefix="fab" name="twitter" stack="1" inverse="true"></fa>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <fa prefix="fas" name="circle" stack="2"></fa>
+                            <fa prefix="fas" name="flag" stack="1" inverse="true"></fa>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <fa prefix="fas" name="square" stack="2"></fa>
+                            <fa prefix="fas" name="terminal" stack="1" inverse="true"></fa>
+                        </span>
+                        <span class="fa-stack fa-4x">
+                            <fa prefix="fas" name="square" stack="2"></fa>
+                            <fa prefix="fas" name="terminal" stack="1" inverse="true"></fa>
+                        </span>
+                        <span class="fa-stack fa-2x">
+                            <fa prefix="fas" name="camera" stack="1"></fa>
+                            <fa prefix="fas" name="ban" stack="2" cssClass="tomato-red"></fa>
+                        </span>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-stacked-1" name="tab-group-stacked" class="tab">
+                        <label for="tab-stacked-1">Font Awesome</label>
+
+                        <input type="radio" id="tab-stacked-2" name="tab-group-stacked" class="tab" checked>
+                        <label for="tab-stacked-2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<span class="fa-stack fa-2x">
+  <i class="fas fa-square fa-stack-2x"></i>
+  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+<span class="fa-stack fa-2x">
+  <i class="fas fa-circle fa-stack-2x"></i>
+  <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+</span>
+<span class="fa-stack fa-2x">
+  <i class="fas fa-square fa-stack-2x"></i>
+  <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
+</span>
+<span class="fa-stack fa-4x">
+  <i class="fas fa-square fa-stack-2x"></i>
+  <i class="fas fa-terminal fa-stack-1x fa-inverse"></i>
+</span>
+<span class="fa-stack fa-2x">
+  <i class="fas fa-camera fa-stack-1x"></i>
+  <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+</span>
+                    </textarea>
+                        </div>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="css" mode="default">
+.tomato-red {
+    color: Tomato !important;
+}
+                    </textarea>
+                            <textarea highlight-js lang="html" mode="default">
+<span class="fa-stack fa-2x">
+  <fa prefix="fas" name="square" stack="2"></fa>
+  <fa prefix="fab" name="twitter" stack="1" inverse="true"></fa>
+</span>
+<span class="fa-stack fa-2x">
+  <fa prefix="fas" name="circle" stack="2"></fa>
+  <fa prefix="fas" name="flag" stack="1" inverse="true"></fa>
+</span>
+<span class="fa-stack fa-2x">
+  <fa prefix="fas" name="square" stack="2"></fa>
+  <fa prefix="fas" name="terminal" stack="1" inverse="true"></fa>
+</span>
+<span class="fa-stack fa-4x">
+  <fa prefix="fas" name="square" stack="2"></fa>
+  <fa prefix="fas" name="terminal" stack="1" inverse="true"></fa>
+</span>
+<span class="fa-stack fa-2x">
+  <fa prefix="fas" name="camera" stack="1"></fa>
+  <fa prefix="fas" name="ban" stack="2" cssClass="tomato-red"></fa>
+</span>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- STACKING REGULAR ICONS -->
+                    <div class="demo-section">
+                        <h4>Aligning Stacked and Regular Icons</h4>
+                    </div>
+                    <p>You can use stacked icons right alongside single icons.
+                        Since stacked icons are styled by our framework’s included CSS to be twice the size of single
+                        icons,
+                        you’ll need to either size down the stacked icon or size up the single icons.</p>
+                    <div class="show-off">
+                        <fa prefix="far" name="circle" scale="2"></fa>
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <fa prefix="far" name="circle" stack="2"></fa>
+                            <fa prefix="fas" name="flag" stack="1"></fa>
+                        </span>
+                        <span class="fa-stack" style="vertical-align: top;">
+                            <fa prefix="fas" name="circle" stack="2"></fa>
+                            <fa prefix="fas" name="flag" stack="1" inverse="true"></fa>
+                        </span>
+                        <fa prefix="far" name="circle" scale="2"></fa>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-stacked-regular-1" name="tab-group-stacked-regular" class="tab">
+                        <label for="tab-stacked-regular-1">Font Awesome</label>
+
+                        <input type="radio" id="tab-stacked-regular-2" name="tab-group-stacked-regular" class="tab"
+                               checked>
+                        <label for="tab-stacked-regular-2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<i class="far fa-circle fa-2x"></i>
+<span class="fa-stack" style="vertical-align: top;">
+  <i class="far fa-circle fa-stack-2x"></i>
+  <i class="fas fa-flag fa-stack-1x"></i>
+</span>
+<span class="fa-stack" style="vertical-align: top;">
+  <i class="fas fa-circle fa-stack-2x"></i>
+  <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+</span>
+<i class="far fa-circle fa-2x"></i>
+                    </textarea>
+                        </div>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<fa prefix="far" name="circle" scale="2"></fa>
+<span class="fa-stack" style="vertical-align: top;">
+  <fa prefix="far" name="circle" stack="2"></fa>
+  <fa prefix="fas" name="flag" stack="1"></fa>
+</span>
+<span class="fa-stack" style="vertical-align: top;">
+  <fa prefix="fas" name="circle" stack="2"></fa>
+  <fa prefix="fas" name="flag" stack="1" inverse="true"></fa>
+</span>
+<fa prefix="far" name="circle" scale="2"></fa>
+                    </textarea>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- SVG -->
+                <div class="tab__content">
+                    <div class="demo-section">
+                        <h3>Power Transforms</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/power-transforms"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <!-- SCALING -->
+                    <div class="demo-section">
+                        <h4>Scaling</h4>
+                    </div>
+                    <p>For sizing and scaling SVG icons, set the attribute<code class="inline">grow</code> or <code
+                        class="inline">shrink</code>
+                        to increase or decrease the size of icons.</p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <fa-svg prefix="fas" name="seedling" shrink="8" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" grow="6" cssClass="rose-background"></fa-svg>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <!-- active tab on page load gets checked attribute -->
+                        <input type="radio" id="tab-svg-positioning1" name="tab-group-svg-positioning" class="tab">
+                        <label for="tab-svg-positioning1">Font Awesome</label>
+
+                        <input type="radio" id="tab-svg-positioning2" name="tab-group-svg-positioning" class="tab"
+                               checked>
+                        <label for="tab-svg-positioning2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+  <i class="fas fa-seedling" data-fa-transform="shrink-8" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="grow-6" style="background:MistyRose"></i>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="css" mode="default">
+.rose-background {
+    background: MistyRose;
+}
+                    </textarea>
+                            <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <fa-svg prefix="fas" name="seedling" shrink="8" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" grow="6" cssClass="rose-background"></fa-svg>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- POSITIONING -->
+                    <div class="demo-section">
+                        <h4>Positioning</h4>
+                    </div>
+                    <p>To move icons up, down, left, or right, set the attribute <code class="inline">up</code>,
+                        <code class="inline">down</code>, <code class="inline">left</code>, and <code class="inline">right</code>
+                        respectively with any arbitrary value, including decimals.
+                    </p>
+                    <p><b>Note: </b>Units are 1/16em.</p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <fa-svg prefix="fas" name="seedling" shrink="8" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" shrink="8" up="6" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" shrink="8" right="6"
+                                    cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" shrink="8" down="6"
+                                    cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" shrink="8" left="6"
+                                    cssClass="rose-background"></fa-svg>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-svg-scaling1" name="tab-group-svg-scaling" class="tab">
+                        <label for="tab-svg-scaling1">Font Awesome</label>
+
+                        <input type="radio" id="tab-svg-scaling2" name="tab-group-svg-scaling" class="tab" checked>
+                        <label for="tab-svg-scaling2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+  <i class="fas fa-seedling" data-fa-transform="shrink-8" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="shrink-8 up-6" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="shrink-8 right-6" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="shrink-8 down-6" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="shrink-8 left-6" style="background:MistyRose"></i>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="css" mode="default">
+.rose-background {
+    background: MistyRose;
+}
+                    </textarea>
+                            <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <fa-svg prefix="fas" name="seedling" shrink="8" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" shrink="8" up="6" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" shrink="8" right="6" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" shrink="8" down="6" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" shrink="8" left="6" cssClass="rose-background"></fa-svg>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- ROTATING -->
+                    <div class="demo-section">
+                        <h4>Rotating & Flipping</h4>
+                    </div>
+                    <p>To rotate or flip icons, use any combination of <code class="inline">flip</code> and <code
+                        class="inline">rotate</code>
+                        attributes.</p>
+                    <p>Attribute <code class="inline">flip</code>takes the following values<code class="inline">horizontal</code>,
+                        <code class="inline">vertical</code> or <code class="inline">both</code></p>
+                    <p>Attribute <code class="inline">rotate</code>takes any arbitrary value (in degree), including
+                        decimals and
+                        negative values.</p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <fa-svg prefix="fas" name="seedling" rotate="90" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" rotate="180" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" rotate="270" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" rotate="30" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" rotate="-30" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" flip="vertical" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" flip="horizontal" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="seedling" flip="both" cssClass="rose-background"></fa-svg>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-svg-rotating1" name="tab-group-svg-rotating" class="tab">
+                        <label for="tab-svg-rotating1">Font Awesome</label>
+
+                        <input type="radio" id="tab-svg-rotating2" name="tab-group-svg-rotating" class="tab" checked>
+                        <label for="tab-svg-rotating2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+  <i class="fas fa-seedling" data-fa-transform="rotate-90" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="rotate-180" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="rotate-270" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="rotate-30" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="rotate--30" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="flip-v" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="flip-h" style="background:MistyRose"></i>
+  <i class="fas fa-seedling" data-fa-transform="flip-v flip-h" style="background:MistyRose"></i>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="css" mode="default">
+.rose-background {
+    background: MistyRose;
+}
+                    </textarea>
+                            <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <fa-svg prefix="fas" name="seedling" rotate="90" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" rotate="180" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" rotate="270" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" rotate="30" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" rotate="-30" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" flip="vertical" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" flip="horizontal" cssClass="rose-background"></fa-svg>
+    <fa-svg prefix="fas" name="seedling" flip="both" cssClass="rose-background"></fa-svg>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- MASKING -->
+                    <div class="demo-section">
+                        <h3>Masking Icons</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/masking"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <p>Set the attribute<code class="inline">maskPrefix</code>and<code class="inline">maskName</code>
+                        to add a masking icon as a background of current icon.</p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <fa-svg prefix="fas" name="pencil-alt" shrink="10" up=".5" maskPrefix="fas"
+                                    maskName="comment"
+                                    cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fab" name="facebook-f" shrink="3.5" down="1.6" right="1.25" maskPrefix="fas"
+                                    maskName="circle" cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="headphones" shrink="6" maskPrefix="fas" maskName="square"
+                                    cssClass="rose-background"></fa-svg>
+                            <fa-svg prefix="fas" name="mask" shrink="3" up="1" maskPrefix="fas" maskName="circle"
+                                    cssClass="rose-background"></fa-svg>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-svg-masking1" name="tab-group-svg-masking" class="tab">
+                        <label for="tab-svg-masking1">Font Awesome</label>
+
+                        <input type="radio" id="tab-svg-masking2" name="tab-group-svg-masking" class="tab" checked>
+                        <label for="tab-svg-masking2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+  <i class="fas fa-pencil-alt" data-fa-transform="shrink-10 up-.5" data-fa-mask="fas fa-comment" style="background:MistyRose"></i>
+  <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle" style="background:MistyRose"></i>
+  <i class="fas fa-headphones" data-fa-transform="shrink-6" data-fa-mask="fas fa-square" style="background:MistyRose"></i>
+  <i class="fas fa-mask" data-fa-transform="shrink-3 up-1" data-fa-mask="fas fa-circle" style="background:MistyRose"></i>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="css" mode="default">
+.rose-background {
+    background: MistyRose;
+}
+                    </textarea>
+                            <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <fa-svg prefix="fas" name="pencil-alt" shrink="10" up=".5" maskPrefix="fas" maskName="comment" cssClass="rose-background" ></fa-svg>
+    <fa-svg prefix="fab" name="facebook-f" shrink="3.5" down="1.6" right="1.25" maskPrefix="fas" maskName="circle" cssClass="rose-background" ></fa-svg>
+    <fa-svg prefix="fas" name="headphones" shrink="6" maskPrefix="fas" maskName="square" cssClass="rose-background" ></fa-svg>
+    <fa-svg prefix="fas" name="mask" shrink="3" up="1" maskPrefix="fas" maskName="circle" cssClass="rose-background" ></fa-svg>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- LAYERING -->
+                    <div class="demo-section">
+                        <h3>Layering, Text and Counters</h3>
+                        <a class="external-link"
+                           href="https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/layering"
+                           target="_blank">
+                            <fa prefix="fas" name="external-link-alt" size="xs"></fa>
+                        </a>
+                    </div>
+                    <p>Similar to stacking WebFont icons, Layering is a new way to place SVG icons and text on top of
+                        each other.
+                        Moreover, layering supports more than 2 icons (a limitation of stacking WebFont icons)</p>
+                    <p><b>@ngx/fontawesome</b> provides<code class="inline">[faLayersText]</code>directive, which is
+                        equivalent to
+                        FontAwesome <code class="inline">fa-layers-text</code> CSS class.
+                        The directive also performs all the transformations such as translating, scaling, rotating with
+                        values
+                        provided in the following attributes.</p>
+                    <ul>
+                        <li><b>Translating: </b><code class="inline">left</code>/<code class="inline">right</code>/<code
+                            class="inline">up</code>/<code class="inline">down</code></li>
+                        <li><b>Scaling: </b><code class="inline">shrink</code>/<code class="inline">grow</code></li>
+                        <li><b>Rotating: </b><code class="inline">rotate</code>/<code class="inline">flip</code></li>
+                    </ul>
+                    <p><b>Note: </b>Units are 1/16em.</p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="circle" cssClass="tomato-red"></fa-svg>
+                                <fa-svg prefix="fas" inverse="true" name="times" shrink="6"></fa-svg>
+                            </span>
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="bookmark"></fa-svg>
+                                <fa-svg prefix="fas" inverse="true" name="heart" shrink="10" up="2"
+                                        cssClass="tomato-red"></fa-svg>
+                            </span>
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="play" rotate="-90" grow="2"></fa-svg>
+                                <fa-svg prefix="fas" name="sun" inverse="true" shrink="10" up="2"></fa-svg>
+                                <fa-svg prefix="fas" name="moon" inverse="true" shrink="11" down="4.2"
+                                        left="4"></fa-svg>
+                                <fa-svg prefix="fas" name="star" inverse="true" shrink="11" down="4.2"
+                                        right="4"></fa-svg>
+                            </span>
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="calendar"></fa-svg>
+                                <span faLayersText class="fa-inverse" shrink="8" down="3"
+                                      style="font-weight:900">27</span>
+                            </span>
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="certificate"></fa-svg>
+                                <span faLayersText class="fa-inverse" shrink="11.5" rotate="-30"
+                                      style="font-weight:900">NEW</span>
+                            </span>
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="envelope"></fa-svg>
+                                <span class="fa-layers-counter" style="background:Tomato">1,419</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tab-wrap">
+                        <input type="radio" id="tab-svg-layering1" name="tab-group-svg-layering" class="tab">
+                        <label for="tab-svg-layering1">Font Awesome</label>
+
+                        <input type="radio" id="tab-svg-layering2" name="tab-group-svg-layering" class="tab" checked>
+                        <label for="tab-svg-layering2">Angular</label>
+
+                        <div class="tab__content">
+                    <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+  <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-circle" style="color:Tomato"></i>
+    <i class="fa-inverse fas fa-times" data-fa-transform="shrink-6"></i>
+  </span>
+
+  <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-bookmark"></i>
+    <i class="fa-inverse fas fa-heart" data-fa-transform="shrink-10 up-2" style="color:Tomato"></i>
+  </span>
+
+  <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-play" data-fa-transform="rotate--90 grow-2"></i>
+    <i class="fas fa-sun fa-inverse" data-fa-transform="shrink-10 up-2"></i>
+    <i class="fas fa-moon fa-inverse" data-fa-transform="shrink-11 down-4.2 left-4"></i>
+    <i class="fas fa-star fa-inverse" data-fa-transform="shrink-11 down-4.2 right-4"></i>
+  </span>
+
+  <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-calendar"></i>
+    <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight:900">27</span>
+  </span>
+
+  <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-certificate"></i>
+    <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-11.5 rotate--30" style="font-weight:900">NEW</span>
+  </span>
+
+  <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-envelope"></i>
+    <span class="fa-layers-counter" style="background:Tomato">1,419</span>
+  </span>
+</div>
+                    </textarea>
+                        </div>
+                        <div class="tab__content">
+                    <textarea highlight-js lang="css" mode="default">
+.tomato-red {
+  color: Tomato !important;
+}
+                    </textarea>
+                            <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="circle" cssClass="tomato-red"></fa-svg>
+        <fa-svg prefix="fas" inverse="true" name="times" shrink="6"></fa-svg>
+    </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="bookmark"></fa-svg>
+        <fa-svg prefix="fas" inverse="true" name="heart" shrink="10" up="2" cssClass="tomato-red"></fa-svg>
+    </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="play" rotate="-90" grow="2"></fa-svg>
+        <fa-svg prefix="fas" name="sun" inverse="true" shrink="10" up="2"></fa-svg>
+        <fa-svg prefix="fas" name="moon" inverse="true" shrink="11" down="4.2" left="4"></fa-svg>
+        <fa-svg prefix="fas" name="star" inverse="true" shrink="11" down="4.2" right="4"></fa-svg>
+    </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="calendar"></fa-svg>
+        <span faLayersText class="fa-inverse" shrink="8" down="3" style="font-weight:900">27</span>
+    </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="certificate"></fa-svg>
+        <span faLayersText class="fa-inverse" shrink="11.5" rotate="-30" style="font-weight:900">NEW</span>
+    </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="envelope"></fa-svg>
+        <span class="fa-layers-counter" style="background:Tomato">1,419</span>
+    </span>
+</div>
+                    </textarea>
+                        </div>
+                    </div>
+
+                    <!-- ANIMATING -->
+                    <div class="demo-section">
+                        <h3>Animating Icons</h3>
+                    </div>
+                    <p>Similar to animating WebFont icons, animating SVG icons can be done in the same way by setting
+                        the
+                        attribute <code class="inline">animate="spin"</code> or <code
+                            class="inline">animate="pulse"</code></p>
+                    <div class="show-off">
+                        <div class="fa-4x">
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="circle" cssClass="tomato-red"></fa-svg>
+                                <fa-svg prefix="fas" inverse="true" name="times" shrink="6" animation="spin"></fa-svg>
+                            </span>
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="spinner" animation="pulse"></fa-svg>
+                                <fa-svg prefix="fas" name="heart" inverse="true" shrink="8"
+                                        cssClass="tomato-red"></fa-svg>
+                            </span>
+                            <span class="fa-layers fa-fw" style="background:MistyRose">
+                                <fa-svg prefix="fas" name="certificate" animation="spin"></fa-svg>
+                                <span faLayersText class="fa-inverse" shrink="11.5" rotate="-30"
+                                      style="font-weight:900">NEW</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                <textarea highlight-js lang="css" mode="default">
+.tomato-red {
+  color: Tomato !important;
+}
+                    </textarea>
+                        <textarea highlight-js lang="html" mode="default">
+<div class="fa-4x">
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="circle" cssClass="tomato-red"></fa-svg>
+        <fa-svg prefix="fas" inverse="true" name="times" shrink="6" animation="spin"></fa-svg>
+    </span>
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="spinner" animation="pulse"></fa-svg>
+        <fa-svg prefix="fas" name="heart" inverse="true" shrink="8" cssClass="tomato-red"></fa-svg>
+    </span>
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+        <fa-svg prefix="fas" name="certificate" animation="spin"></fa-svg>
+        <span faLayersText class="fa-inverse" shrink="11.5" rotate="-30" style="font-weight:900">NEW</span>
+    </span>
+</div>
+                    </textarea>
+                    </div>
+                    <!-- ANGULAR ATTRIBUTES BINDING -->
+                    <div class="demo-section">
+                        <h3>Attribute Binding</h3>
+                    </div>
+                    <p>Attribute values of FontAwesome icon can be dynamically set or updated via Angular bindings.<br/>
+                        Click on the icons bellow to change their attribute value.</p>
+                    <div class="show-off demo-group">
+                        <div class="demo-item">
+                            <label>[grow]</label>
+                            <label>{{growValue}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [grow]="growValue" cssClass="rose-background"
+                                        title="click to change [grow] attribute" (click)="updateGrowValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[shrink]</label>
+                            <label>{{shrinkValue}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [shrink]="shrinkValue" cssClass="rose-background"
+                                        title="click to change [shrink] attribute"
+                                        (click)="updateShrinkValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[up]</label>
+                            <label>{{upValue}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [up]="upValue" cssClass="rose-background"
+                                        title="click to change [up] attribute" (click)="updateUpValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[down]</label>
+                            <label>{{downValue}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [down]="downValue" cssClass="rose-background"
+                                        title="click to change [down] attribute" (click)="updateDownValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[left]</label>
+                            <label>{{leftValue}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [left]="leftValue" cssClass="rose-background"
+                                        title="click to change [left] attribute" (click)="updateLeftValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[right]</label>
+                            <label>{{rightValue}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [right]="rightValue" cssClass="rose-background"
+                                        title="click to change [right] attribute" (click)="updateRightValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[rotate]</label>
+                            <label>{{rotateValue}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [rotate]="rotateValue" cssClass="rose-background"
+                                        title="click to change [rotate] attribute" (click)="updateRotateValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[flip]</label>
+                            <label>{{flipValue || 'null'}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="seedling" [flip]="flipValue" cssClass="rose-background"
+                                        title="click to change [flip] attribute" (click)="updateFlipValue()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[animation]</label>
+                            <label>{{pulseAnimation || 'null'}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="spinner" [animation]="pulseAnimation"
+                                        title="click to change [animation] attribute" (click)="updatePulse()"></fa-svg>
+                            </span>
+                        </div>
+                        <div class="demo-item">
+                            <label>[animation]</label>
+                            <label>{{spinAnimation || 'null'}}</label>
+                            <span class="fa-4x">
+                                <fa-svg prefix="fas" name="stroopwafel" [animation]="spinAnimation"
+                                        title="click to change [animation] attribute" (click)="updateSpin()"></fa-svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
