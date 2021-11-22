@@ -38,7 +38,7 @@ before_deploy:
 
 deploy:
   provider: npm
-  email: tuyen.tran@exodussystem.com
+  email: anhtuyen.tran@gmail.com
   api_key:
     secure: "gzTkRDK/mypZN51GI+l02UL2QKLbyTXVbb5tmh7dmrcDOxXdbuSbQucrOY06x85O8Bf6EaNtgIi+Xy9WCAewc976zUK3XNK+g7oDnv/RFdJTWSuQSbp9JNu1wi1HHZqCmOVRA5pYiwLNY/0Ok+XRrzzmB6aKWW+0ZKwxKo6I8A2N9IRTIq0x17ef34Mg5Kcx62Hg+nSoZ6IWHjjcwhoelESA1gboDCZEjg/ZD5djnKvUxJ59ianyw6xHzPF5mwdIWFGjMb4js3n+HLa3N6AZ6L44QZJj5cdqZsN6Df9y0CdRnI2omMZnlLDh1so1fiWCaold1TFXEADnTvCK2+X2cOV8VjZkA/jD05bRHcO8wsDp8BeOYxx1CIEYGm/OL9XUBBQxaD8e2iVnYRbnCBxnVGVesp3XVtLikxTOomWFcWvjlWBudzkSrXW26MCvtcfeRIlazmnkMKxLJhW3kthl8KVVDMZ0+1Ok9jFljoCrE4BxAjQeD+P4mOmBdpXOqtTDsY+iGwtof84G/CGJYkDaZXvulqDONlzFu0nIjN8B/LeP33n4LRTcFFWW4swRtEO888J221vN9Kmr3gE2/dA1My2QAmAgwwB2mZShXWXW+12D0b0Bu3M095D42/MIbFLWC3ZHcjEN6QB/tVi48ZkOFd/m4mN9fA2c2OpB43wcrlE="
   on:
