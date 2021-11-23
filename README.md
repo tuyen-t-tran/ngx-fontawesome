@@ -1,12 +1,11 @@
 **NOTE: This library supports only FontAwesome version 5+.<br/>
-If you are using FontAwesome 4, please use [@ngx/fontawesome4](https://github.com/tuyen-t-tran/ngx-fontawesome4).**
+If you are using FontAwesome 4, please use [@ngx/fontawesome4](https://github.com/tuyenttran/ngx-fontawesome4).**
 
 # @ngx/fontawesome
 
 
 [![npm Version](https://img.shields.io/npm/v/@ngx/fontawesome.svg)](https://www.npmjs.com/package/@ngx/fontawesome)
-[![Build Status](https://travis-ci.com/tuyenttran/ngx-fontawesome.svg?branch=master)](https://travis-ci.com/tuyenttran/ngx-fontawesome )
-
+[![Build Status](https://app.travis-ci.com/tuyenttran/ngx-fontawesome.svg?branch=master)](https://travis-ci.com/tuyenttran/ngx-fontawesome )
 > Another Angular way to display FontAwesome (v5+)
 
 ## Demo
