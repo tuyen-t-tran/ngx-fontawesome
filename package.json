@@ -69,6 +69,7 @@
     "@angular/core": "^5.0.0"
   },
   "devDependencies": {
+    "@angular-devkit/core": "^0.0.29",
     "@angular/animations": "^5.0.0",
     "@angular/cli": "1.5.4",
     "@angular/common": "^5.0.0",
