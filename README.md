@@ -1,10 +1,10 @@
 **NOTE: This library supports only FontAwesome version 5+.<br/>
-If you are using FontAwesome 4, please use [@ngx/fontawesome4](https://github.com/tuyenttran/ngx-fontawesome4).**
+If you are using FontAwesome 4, please use [@ui4ngx/fontawesome4](https://github.com/tuyenttran/ngx-fontawesome4).**
 
-# @ngx/fontawesome
+# @ui4ngx/fontawesome
 
 
-[![npm Version](https://img.shields.io/npm/v/@ngx/fontawesome.svg)](https://www.npmjs.com/package/@ngx/fontawesome)
+[![npm Version](https://img.shields.io/npm/v/@ui4ngx/fontawesome.svg)](https://www.npmjs.com/package/@ui4ngx/fontawesome)
 [![Build Status](https://app.travis-ci.com/tuyenttran/ngx-fontawesome.svg?branch=master)](https://travis-ci.com/tuyenttran/ngx-fontawesome )
 > Another Angular way to display FontAwesome (v5+)
 
@@ -17,7 +17,7 @@ Check out the **[demo](https://tuyenttran.github.io/ngx-fontawesome/)**.
 
 **1. Install Packages**
 
-`npm install @ngx/fontawesome`
+`npm install @ui4ngx/fontawesome`
 
 **2. Import the module:**
 
@@ -72,7 +72,7 @@ _If you're using [Angular CLI](https://github.com/angular/angular-cli), add to `
 "styles": [
     ...
     "src/assets/css/all.css",
-    "node_modules/@ngx/fontawesome/css/ngx-fontawesome.scss"
+    "node_modules/@ui4ngx/fontawesome/css/ngx-fontawesome.scss"
     ...
 ],
 ```
@@ -88,7 +88,7 @@ This way CSS styles and Web Fonts will be downloaded automatically._
 
 ```typescript
 //...
-import { NgxFontAwesomeModule } from '@ngx/fontawesome';
+import { NgxFontAwesomeModule } from '@ui4ngx/fontawesome';
 
 @NgModule({
   //...
@@ -131,7 +131,7 @@ _If you're using [Angular CLI](https://github.com/angular/angular-cli), add to `
 "styles": [
     ...
     "src/assets/css/svg-with-js.css",
-    "node_modules/@ngx/fontawesome/css/ngx-fontawesome.scss"
+    "node_modules/@ui4ngx/fontawesome/css/ngx-fontawesome.scss"
     ...
 ],
 ```
@@ -153,7 +153,7 @@ _If you're NOT using the CLI, import the stylesheet to your `index.html` file_
 
 ```typescript
 //...
-import { NgxFontAwesomeModule } from '@ngx/fontawesome';
+import { NgxFontAwesomeModule } from '@ui4ngx/fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -170,7 +170,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
     {provide: 'fab', useValue: fab},
     {provide: 'far', useValue: far},
     {provide: 'fas', useValue: fas},
-    // @ngx/fontawesome options
+    // @ui4ngx/fontawesome options
     {provide: 'ngxFontAwesome', useValue: {svgSupport: true, prefix: ['far', 'fas', 'fab']}}
   ]
   //...
@@ -180,7 +180,7 @@ export class AppModule { }
 
 **NgxFAOptions** <br/>
 
-Used to configure the *@ngx/fontawesome* module<br/>
+Used to configure the *@ui4ngx/fontawesome* module<br/>
 Supplied in providers<br/>
 
 Name      | Type          | Default value   | Optional

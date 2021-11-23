@@ -1,21 +1,17 @@
 {
-  "name": "@ngx/fontawesome",
+  "name": "@ui4ngx/fontawesome",
   "version": "5.5.1",
   "description": "Another Angular way to display FontAwesome (v5+).",
-  "author": {
-    "name": "Tuyen T Tran",
-    "email": "anhtuyen.tran@gmail.com",
-    "url": "www.exodussystem.com"
-  },
+  "author": "Tuyen T Tran <anhtuyen.tran@gmail.com> (www.exodussystem.com)",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
     "clean": "rimraf dist/*",
     "start": "ng serve --aot",
-    "copy-scss": "copyfiles -u 1 assets/css/*.*css dist/@ngx/fontawesome",
-    "copy-esm5": "copyfiles -u 4 dist/@ngx/fontawesome/@ngx/*.es5.* dist/@ngx/fontawesome/esm5 && rimraf dist/@ngx/fontawesome/@ngx/*.es5.*",
-    "copy-esm2015": "copyfiles -u 4 dist/@ngx/fontawesome/@ngx/*.js* dist/@ngx/fontawesome/esm2015 && rimraf dist/@ngx/fontawesome/@ngx",
-    "remove-extras": "rimraf dist/@ngx/fontawesome/@ngx && rimraf dist/@ngx/fontawesome/example",
+    "copy-scss": "copyfiles -u 1 assets/css/*.*css dist/@ui4ngx/fontawesome",
+    "copy-esm5": "copyfiles -u 4 dist/@ui4ngx/fontawesome/@ui4ngx/*.es5.* dist/@ui4ngx/fontawesome/esm5 && rimraf dist/@ui4ngx/fontawesome/@ui4ngx/*.es5.*",
+    "copy-esm2015": "copyfiles -u 4 dist/@ui4ngx/fontawesome/@ui4ngx/*.js* dist/@ui4ngx/fontawesome/esm2015 && rimraf dist/@ui4ngx/fontawesome/@ui4ngx",
+    "remove-extras": "rimraf dist/@ui4ngx/fontawesome/@ui4ngx && rimraf dist/@ui4ngx/fontawesome/example",
     "build-packagr": "ng-packagr -p ng-package.json",
     "build-lib": "npm run clean && npm run build-packagr && npm run copy-scss && npm run copy-esm5 && npm run copy-esm2015 && npm run remove-extras",
     "build-ghpages": "ng build --base-href \"https://tuyenttran.github.io/ngx-fontawesome/\" --output-path \"dist-ghpages\"",
@@ -24,8 +20,8 @@
     "e2e": "ng e2e",
     "e2e-watch": "watch \"ng e2e -s false\" src e2e --wait=1",
     "lint": "ng lint",
-    "publish-local": "npm run build-lib && npm publish dist/@ngx/fontawesome/ --registry http://localhost:4873/",
-    "publish-npm": "npm run build-lib && npm publish --access=public dist/@ngx/fontawesome/ --registry https://registry.npmjs.org/"
+    "publish-local": "npm run build-lib && npm publish dist/@ui4ngx/fontawesome/ --registry http://localhost:4873/",
+    "publish-npm": "npm run build-lib && npm publish --access=public dist/@ui4ngx/fontawesome/ --registry https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -40,7 +36,7 @@
     "ng-font-awesome",
     "ng-fontawesome",
     "ngx-fontawesome",
-    "@ngx/fontawesome",
+    "@ui4ngx/fontawesome",
     "font-awesome",
     "fontawesome",
     "font awesome",
@@ -58,11 +54,14 @@
     "angular 11",
     "ng",
     "ngx",
-    "@ngx"
+    "ui",
+    "@ngx",
+    "@ui4ngx"
   ],
   "private": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
     "@angular/common": "^5.0.0",
@@ -88,6 +87,8 @@
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "anymatch": "^3.1.2",
+    "chokidar": "^3.5.2",
     "codelyzer": "^4.0.1",
     "copyfiles": "2.2.0",
     "core-js": "^2.4.1",
