@@ -25,7 +25,7 @@
     "e2e-watch": "watch \"ng e2e -s false\" src e2e --wait=1",
     "lint": "ng lint",
     "publish-local": "npm run build-lib && npm publish dist/@ngx/fontawesome/ --registry http://localhost:4873/",
-	"publish-npm": "npm run build-lib && npm publish --access=public dist/@ngx/fontawesome/ --registry https://registry.npmjs.org/"
+    "publish-npm": "npm run build-lib && npm publish --access=public dist/@ngx/fontawesome/ --registry https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -88,7 +88,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
-    "copyfiles": "^2.4.1",
+    "copyfiles": "2.2.0",
     "core-js": "^2.4.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
