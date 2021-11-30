@@ -1,2 +1,6 @@
-<i [ngClass]="classList" aria-hidden="true" [attr.title]="title ? title : null"
-   [style]="allVars?.length >0 ? getSanitizedStyle(allVars): null"></i>
+<i [ngClass]="classList"
+   [attr.aria-hidden]="(!!alt || !title)  ? 'true' : null"
+   [attr.title]="!!title ? title : null"
+   [style]="allVars?.length >0 ? getSanitizedStyle(allVars): null">
+</i>
+<span *ngIf="!!alt" class="sr-only" [innerHTML]="alt"></span>

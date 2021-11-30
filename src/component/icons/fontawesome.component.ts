@@ -13,7 +13,6 @@ import {
     SIZE_VALUE_VALIDATOR,
     STACK_VALUE_VALIDATOR
 } from './fontawesome.interface';
-import { isNumeric } from 'rxjs/util/isNumeric';
 
 @Component({
     selector: 'fa',
@@ -30,7 +29,8 @@ export class NgxFontAwesomeComponent implements OnChanges {
     @Input() prefix: string;            // fad/fas/fab/far/fal
     @Input() name: string;              // icon name -> fa-${name}
     @Input() cssClass: string;          // additional CSS class
-    @Input() title: string;             // title
+    @Input() title: string;             // tooltip text display when hovered
+    @Input() alt: string;               // text alternative to support screen reader
     @Input() scale: number;             // [1-10] -> fa-[1x|2x|..|10x]
     @Input() size: string;              // [lg|sm|xs] -> fa-[lg|sm|xs]
     @Input() stack: number;             // [1-2] -> fa-stack-[1|2]x
@@ -175,7 +175,7 @@ export class NgxFontAwesomeComponent implements OnChanges {
                     break;
 
                 case 'rotateBy':
-                    if (!resetValue && !isNumeric(currentValue)) {
+                    if (!resetValue && isNaN(Number(currentValue))) {
                         throw new Error('Invalid rotateBy value [' + currentValue + ']. Supporting only numeric value.');
                     }
                     if (!!previousValue) {

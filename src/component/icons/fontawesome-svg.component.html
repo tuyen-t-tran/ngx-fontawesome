@@ -1,20 +1,24 @@
 <ng-container *ngIf="svgSymbol">
-    <svg class="ngx-icon" *ngIf="!inlineSvg"
+    <svg *ngIf="!inlineSvg" role="image" class="svg-inline--fa"
          [ngClass]="classList"
          [attr.data-icon]="name"
          [attr.data-prefix]="prefix"
-         [attr.aria-labelledby]="title ? componentId + '-title' : null">
-        <title [attr.id]="componentId + '-title'" *ngIf="title" [innerHTML]="title"></title>
+         [attr.aria-hidden]="(!!alt || !title) ? 'true' : null"
+         [attr.aria-labelledby]="!!alt ? componentId + '-alt' : null">
+        <title *ngIf="alt" [attr.id]="componentId + '-alt'" [innerHTML]="alt"></title>
+        <title *ngIf="title" [innerHTML]="title"></title>
         <use [attr.xlink:href]="'#' + svgSymbol?.id"></use>
     </svg>
-    <svg role="img" xmlns="http://www.w3.org/2000/svg" *ngIf="inlineSvg"
+    <svg *ngIf="inlineSvg" role="img" xmlns="http://www.w3.org/2000/svg" class="svg-inline--fa"
          [ngClass]="classList"
          [attr.data-icon]="name"
          [attr.data-prefix]="prefix"
-         [attr.aria-labelledby]="title ? componentId + '-title' : null"
+         [attr.aria-hidden]="(!!alt || !title)  ? 'true' : null"
+         [attr.aria-labelledby]="!!alt ? componentId + '-alt' : null"
          [style.transformOrigin]="useMask ? null : symbolTransform"
          [attr.viewBox]="'0 0 ' + (useMask && !!maskSymbol ? (maskSymbol?.width + ' ' + maskSymbol?.height) : (svgSymbol?.width + ' ' + svgSymbol?.height))">
-        <title [attr.id]="componentId + '-title'" *ngIf="title" [innerHTML]="title"></title>
+        <title *ngIf="alt" [attr.id]="componentId + '-alt'" [innerHTML]="alt"></title>
+        <title *ngIf="title" [innerHTML]="title"></title>
         <g [attr.transform]="outerTransform" *ngIf="!useMask">
             <g [attr.transform]="innerTransform">
                 <path [attr.transform]="pathTransform" fill="currentColor" [attr.d]="svgSymbol?.path"></path>

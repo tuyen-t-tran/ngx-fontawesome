@@ -30,26 +30,31 @@ export class NgxFontAwesomeSvgComponent implements OnChanges {
     // Input & Output
     // -------------------------------------------------------------------------
 
-    @Input() prefix: string;            // fad/fas/fab/far/fal
+    @Input() prefix: string;            // icon prefix (fad/fas/fab/far/fal)
     @Input() name: string;              // icon name
     @Input() cssClass: string;          // additional CSS class
-    @Input() title: string;             // title
+    @Input() title: string;             // tooltip text display when hovered
+    @Input() alt: string;               // text alternative to support screen reader
+
     // scaling
-    @Input() shrink: number;
-    @Input() grow: number;
-    // translate
-    @Input() left: number;
-    @Input() right: number;
-    @Input() up: number;
-    @Input() down: number;
-    // rotate
+    @Input() shrink: number;            // scale down  1/16 em
+    @Input() grow: number;              // scale up    1/16 em
+
+    // translating
+    @Input() left: number;              // move left    1/16 em
+    @Input() right: number;             // move right   1/16 em
+    @Input() up: number;                // move up      1/16 em
+    @Input() down: number;              // move down    1/16 em
+
+    // rotating
     @Input() flip: string;              // [horizontal|vertical|both]
-    @Input() rotate: number;            // angle
+    @Input() rotate: number;            // angle in degree
 
-    @Input() maskPrefix: string;        // fas/fab/far/fal
-    @Input() maskName: string;
+    // mask icon
+    @Input() maskPrefix: string;        // mask icon prefix (fad/fas/fab/far/fal)
+    @Input() maskName: string;          // mask icon name
 
-    @Input() animation: string;         // [spin|pulse] -> fa-spin|fa-pulse
+    @Input() animation: string;         // [spin|pulse] -> fa-svg-spin|fa-svg-pulse
     @Input() inverse: boolean;          // true -> fa-inverse
 
     // -------------------------------------------------------------------------
@@ -183,13 +188,10 @@ export class NgxFontAwesomeSvgComponent implements OnChanges {
                     break;
             }
         });
-        this.inlineSvg = this.useMask || this._flipX || this._flipY || this._size !== 0
-            || this._posX !== 0 || this._posY !== 0 || this._rotX !== 0;
+        this.inlineSvg = this.useMask || this._flipX || this._flipY || this._size !== 16
+                     || this._posX !== 0 || this._posY !== 0 || this._rotX !== 0;
         if (this.inlineSvg) {
-            this._addCssClass('svg-inline--fa');
             this._updateSymbolTransform();
-        } else {
-            this._removeCssClass('svg-inline--fa');
         }
     }
 

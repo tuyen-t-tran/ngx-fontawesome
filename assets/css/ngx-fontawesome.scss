@@ -21,3 +21,22 @@
   -webkit-transform: rotate(var(--fa-rotate-angle,0));
   transform: rotate(var(--fa-rotate-angle,0));
 }
+
+/* When a prefers-reduced-motion is set to reduce, the user prefers less motion on the page to help reduce discomfort
+from vestibular motion disorders and other motion sensitivities.
+Therefore, animation should be TURNED OFF when this is set to 'reduce */
+@media (prefers-reduced-motion:reduce) {
+    .fa-pulse,
+    .fa-spin {
+        -webkit-animation-delay:-1ms;
+        animation-delay:-1ms;
+        -webkit-animation-duration:1ms;
+        animation-duration:1ms;
+        -webkit-animation-iteration-count:1;
+        animation-iteration-count:1;
+        -webkit-transition-delay:0s;
+        transition-delay:0s;
+        -webkit-transition-duration:0s;
+        transition-duration:0s
+    }
+}
