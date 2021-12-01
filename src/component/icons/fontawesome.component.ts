@@ -58,6 +58,10 @@ export class NgxFontAwesomeComponent implements OnChanges {
     constructor(private _sanitizer: DomSanitizer) {
     }
 
+    // -------------------------------------------------------------------------
+    // Lifecycle callbacks
+    // -------------------------------------------------------------------------
+
     ngOnChanges(changes: { [propertyName: string]: SimpleChange }) {
         if (!changes) {
             return;

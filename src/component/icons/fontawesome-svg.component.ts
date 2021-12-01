@@ -97,6 +97,10 @@ export class NgxFontAwesomeSvgComponent implements OnChanges {
     // Public Methods
     // -------------------------------------------------------------------------
 
+    // -------------------------------------------------------------------------
+    // Lifecycle callbacks
+    // -------------------------------------------------------------------------
+
     ngOnChanges(changes: { [propertyName: string]: SimpleChange }) {
         if (!changes) {
             return;

@@ -3,7 +3,6 @@
  */
 import { Directive, ElementRef, HostBinding, Input, OnChanges, SimpleChange } from '@angular/core';
 import { FLIP_VALUE_VALIDATOR } from '../icons/fontawesome.interface';
-import { isNumeric } from 'rxjs/util/isNumeric';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 
 const UNITS_IN_GRID = 16;
@@ -40,16 +39,18 @@ export class NgxLayersTextDirective implements OnChanges {
     // -------------------------------------------------------------------------
 
     // scaling
-    @Input() shrink: number;
-    @Input() grow: number;
-    // translation
-    @Input() left: number;
-    @Input() right: number;
-    @Input() up: number;
-    @Input() down: number;
-    // rotation
-    @Input() flip: string;     // [horizontal|vertical|both]
-    @Input() rotate: number;
+    @Input() shrink: number;            // scale down  1/16 em
+    @Input() grow: number;              // scale up    1/16 em
+
+    // translating
+    @Input() left: number;              // move left    1/16 em
+    @Input() right: number;             // move right   1/16 em
+    @Input() up: number;                // move up      1/16 em
+    @Input() down: number;              // move down    1/16 em
+
+    // rotating
+    @Input() flip: string;              // [horizontal|vertical|both]
+    @Input() rotate: number;            // angle in degree
 
     // -------------------------------------------------------------------------
     // Properties
@@ -121,7 +122,7 @@ export class NgxLayersTextDirective implements OnChanges {
 
                 // rotating
                 case 'rotate':
-                    if (isNumeric(currentValue)) {
+                    if (!isNaN(Number(currentValue))) {
                         this._rotX = newValue;
                     } else {
                         throw new Error('Invalid rotate value [' + currentValue + ']. Supporting only numeric value.');
@@ -138,8 +139,8 @@ export class NgxLayersTextDirective implements OnChanges {
                     break;
             }
         });
-        this.performTransform = this._flipX || this._flipY || this._size !== 0
-            || this._posX !== 0 || this._posY !== 0 || this._rotX !== 0;
+        this.performTransform = this._flipX || this._flipY || this._size !== 16
+                                || this._posX !== 0 || this._posY !== 0 || this._rotX !== 0;
         if (this.performTransform) {
             this._updateTransform();
         }

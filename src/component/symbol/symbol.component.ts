@@ -5,7 +5,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Inject, OnDestroy } from '@angular/core';
 import { NgxSymbolService } from '../../service/symbol.service';
 import { SvgSymbol } from './symbol.interface';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs/internal/Subscription';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,

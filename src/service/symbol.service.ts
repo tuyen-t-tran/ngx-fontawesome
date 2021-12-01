@@ -11,8 +11,8 @@ import {
     SvgSymbol
 } from '../component/symbol/symbol.interface';
 import { NgxSymbolsComponent } from '../component/symbol/symbol.component';
-import { Observable } from 'rxjs/Observable';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Observable } from 'rxjs/internal/Observable';
+import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 
 @Injectable()
 export class NgxSymbolService {

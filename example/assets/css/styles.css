@@ -405,6 +405,15 @@ p {
     border-width: 1px;
 }
 
+.show-off > fa,
+.show-off > fa-svg,
+.show-off > span,
+.show-off div > span,
+.show-off div > fa,
+.show-off div > fa-svg {
+    margin-right: 10px;
+}
+
 .docs-generated > .table-wrap {
     width: 100%;
     overflow: auto;

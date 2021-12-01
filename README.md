@@ -5,7 +5,7 @@ If you are using FontAwesome 4, please use [@ui4ngx/fontawesome4](https://github
 
 
 [![npm Version](https://img.shields.io/npm/v/@ui4ngx/fontawesome.svg)](https://www.npmjs.com/package/@ui4ngx/fontawesome)
-[![Build Status](https://app.travis-ci.com/tuyenttran/ngx-fontawesome.svg?branch=master)](https://travis-ci.com/tuyenttran/ngx-fontawesome )
+[![Build Status](https://app.travis-ci.com/tuyenttran/ngx-fontawesome.svg?branch=master)](https://app.travis-ci.com/tuyenttran/ngx-fontawesome )
 > Another Angular way to display FontAwesome (v5+)
 
 ## Demo
@@ -109,7 +109,7 @@ export class AppModule { }
 
 2.2.1. _Install CSS Styles_
 
-_If you're NOT using [Angular CLI](https://github.com/angular/angular-cli), FontAwesome 5 can be downloaded at<br/>
+_If you want to manually install FontAwesome 5+, the free package can be downloaded at<br/>
 https://fontawesome.com/download
 
 Clicking on *[Free For Web]* under Font Awesome 5 section, you will be able to get this file
@@ -194,13 +194,13 @@ svgSupport| `Boolean`     | `false`         | Yes
 
 
 _If you're using SystemJS, add to `systemjs.config.js`_
-```json
-map: {
-    
-    '@fortawesome/free-brands-svg-icons': 'npm:@fortawesome/free-brands-svg-icons/index.js',
-    '@fortawesome/free-solid-svg-icons': 'npm:@fortawesome/free-solid-svg-icons/index.js',
-    '@fortawesome/free-regular-svg-icons': 'npm:@fortawesome/free-regular-svg-icons/index.js',
-    
+```js
+{
+    map: {
+        '@fortawesome/free-brands-svg-icons': 'npm:@fortawesome/free-brands-svg-icons/index.js',
+        '@fortawesome/free-solid-svg-icons': 'npm:@fortawesome/free-solid-svg-icons/index.js',
+        '@fortawesome/free-regular-svg-icons': 'npm:@fortawesome/free-regular-svg-icons/index.js',
+    }
 }
 ```
 
