@@ -33,7 +33,7 @@ The following is how to set up your project to use WebFont or SVG or both.
 
 2.1.1. _Install CSS Styles and Web Fonts_
 
-_If you want to manually install FontAwesome 5+, the free package can be downloaded at<br/>
+_If you want to manually install FontAwesome 5+, the free package can be downloaded at_<br/>
 https://fontawesome.com/download
 
 Clicking on *[Free For Web]* under Font Awesome 5 section, you will be able to get this file
@@ -109,7 +109,7 @@ export class AppModule { }
 
 2.2.1. _Install CSS Styles_
 
-_If you want to manually install FontAwesome 5+, the free package can be downloaded at<br/>
+_If you want to manually install FontAwesome 5+, the free package can be downloaded at_<br/>
 https://fontawesome.com/download
 
 Clicking on *[Free For Web]* under Font Awesome 5 section, you will be able to get this file
@@ -184,14 +184,13 @@ export class AppModule { }
 
 **NgxFAOptions** <br/>
 
-Used to configure the *@ui4ngx/fontawesome* module<br/>
-Supplied in providers<br/>
+<li>Used to configure the <b>@ui4ngx/fontawesome</b> module</li>
+<li>Supplied in providers</li>
 
 Name      | Type          | Default value   | Optional
 ---       | ---           | ---             | ---
 prefix    | `String[]`    | `[]`            | Yes
 svgSupport| `Boolean`     | `false`         | Yes
-
 
 _If you're using SystemJS, add to `systemjs.config.js`_
 ```js
@@ -215,7 +214,7 @@ _If you're using SystemJS, add to `systemjs.config.js`_
 Name      | Type               | Options                                   | Optional
 ---       | ---                | ---                                       | ---
 prefix    | `String`           | `far, fas, fab`                           | No
-name      | `String`           | Icon [Name](http://fontawesome.io/icons/) | No
+name      | `String`           | [Icon name](https://fontawesome.com/v5.0/icons?d=gallery) | No
 title     | `String`           | Tooltip to display when hovered           | Yes
 alt       | `String`           | Text alternative to support screen reader | Yes
 animation | `String`           | `spin, pulse`                             | Yes
@@ -261,7 +260,7 @@ inverse   | `Boolean`          | `true, false`                             | Yes
 Name      | Type               | Options                                   | Optional
 ---       | ---                | ---                                       | ---
 prefix    | `String`           | `far, fas, fab`                           | No
-name      | `String`           | Icon [Name](http://fontawesome.io/icons/) | No
+name      | `String`           | [Icon name](https://fontawesome.com/v5.0/icons?d=gallery) | No
 title     | `String`           | Tooltip to display when hovered           | Yes
 alt       | `String`           | Text alternative to support screen reader | Yes
 animation | `String`           | `spin, pulse`                             | Yes
@@ -276,7 +275,7 @@ rotate    | `Number`           | Angle in degree,  etc `45, 30,...`        | Yes
 flip      | `String`           | `horizontal, vertical, both`              | Yes
 inverse   | `Boolean`          | `true, false`                             | Yes
 maskPrefix| `String`           | Prefix (`far, fas, fab`) for mask icon    | Yes
-maskName  | `String`           | [Name](http://fontawesome.io/icons/) for mask icon | Yes
+maskName  | `String`           | [Name](https://fontawesome.com/v5.0/icons?d=gallery) for mask icon | Yes
 
 
 *Syntax*
