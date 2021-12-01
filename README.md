@@ -33,7 +33,7 @@ The following is how to set up your project to use WebFont or SVG or both.
 
 2.1.1. _Install CSS Styles and Web Fonts_
 
-_If you're NOT using [Angular CLI](https://github.com/angular/angular-cli), FontAwesome 5 can be downloaded at<br/>
+_If you want to manually install FontAwesome 5+, the free package can be downloaded at<br/>
 https://fontawesome.com/download
 
 Clicking on *[Free For Web]* under Font Awesome 5 section, you will be able to get this file
@@ -353,7 +353,7 @@ Version   | Angular Version    | Font Awesome Version      | Library version
 `...`     | `...`              | `...`                     | `...`
 `8.5.10`  | `^8.0.0`           | Support v5+ (`^5.15.4`)   | `10` Etc. Upgrade and new feature ...
 `8.6.10`  | `^8.0.0`           | Support v6+               | `10` Etc. Upgrade and new feature ...
-`9.6.11`  | `^8.0.0`           | Support v6+               | `10` Etc. Upgrade and new feature ...
+`9.6.11`  | `^8.0.0`           | Support v6+               | `11` Etc. Upgrade and new feature ...
 
 You got the idea.
 
